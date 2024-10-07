@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/img/IT24_LOGO-01.svg";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
           />
           <div className="footer__bottom-icons">
             <p className="m-0">Sekite mus</p>
-            <a href="" className="facebook">
+            <a href="https://www.facebook.com" className="facebook">
               <i className="fab fa-facebook-f"></i>
             </a>
           </div>
@@ -21,20 +22,20 @@ export default function Footer() {
         <div>
           <ul className="d-flex gap-2">
             <li>
-              <a href="/">Pagrindinis</a>
+            <Link to="/">Pagrindinis</Link>
             </li>
             <li>
-              <a href="/apie-mus">Apie mus</a>
+            <Link to="/apie-mus">Apie mus</Link>
             </li>
             <li>
-              <a href="/paslaugos">Paslaugos</a>
+            <Link to="/paslaugos">Paslaugos</Link>
             </li>
             <li>
-              <a href="/kontaktai">Kontaktai</a>
+            <Link to="/kontaktai">Kontaktai</Link>
             </li>
           </ul>
         </div>
-        <p>&copy; 2024 IT24. Visos teisės zzz</p>
+        <p>&copy; 2024 ITpagalba24. Visos teisės saugomos. Bendraukime paštu: susisiekime@itpagalba24.lt</p>
       </div>
     </footer>
   );

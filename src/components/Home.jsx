@@ -1,5 +1,6 @@
 import React from "react";
 import illustration from "../assets/img/undraw.svg";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
         className="container flex-row d-flex justify-content-between align-items-center"
       >
         <div className="hero__content">
-          <h1 className="title">Company name</h1>
+          <h1 className="title">ITpagalba24</h1>
           <ul className="card-text">
             <li>
               Universalus puslapis visoms Jūsų IT problemoms ir paslaugoms
@@ -20,9 +21,8 @@ export default function Home() {
               susisiekite su mumis ir mes pasiūlysime jums dar geresnę kainą!
             </li>
           </ul>
-          <a href="/kontaktai" className="btn btn-primary">
-            Susisiekite
-          </a>
+          <Link to="/kontaktai" className="btn btn-primary">Susisiekite</Link>
+            
         </div>
         <div className="hero__img text-center">
           <img src={illustration} />

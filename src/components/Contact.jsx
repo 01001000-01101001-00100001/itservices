@@ -12,8 +12,8 @@ export default function Contact() {
     setIsSending(true); // Start spinner
 
     emailjs
-      .sendForm("service_mpt9f2m", "template_2vvzhju", form.current, {
-        publicKey: "nT2NLiwYkXJnv5kJf",
+      .sendForm("service_mpt9f2m", "template_g2u5dcf", form.current, {
+        publicKey: "8WaNXLAoz9OR89Cpn",
       })
       .then(
         () => {
@@ -106,7 +106,7 @@ export default function Contact() {
                 </div>
                 <div className="detail__content">
                   <h3>El. paštas</h3>
-                  <p>itpagalba</p>
+                  <p>susisiekime@itpagalba24.lt</p>
                 </div>
               </div>
             </div>
